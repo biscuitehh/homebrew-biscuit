@@ -26,7 +26,7 @@ class Libimobiledevice < Formula
   depends_on "libplist"
   depends_on "usbmuxd"
   depends_on "openssl"
-ome
+
   def install
     system "./autogen.sh" if build.head?
     system "./configure", "--disable-dependency-tracking",
